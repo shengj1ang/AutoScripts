@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Driving Test Information Auto Fill</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			height: 100vh;
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+
+		.sidebar {
+			background-color: #eee;
+			padding: 20px;
+			width: 200px;
+			box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+		}
+
+		.main {
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.main iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+
+		h1 {
+			text-align: center;
+			margin: 0;
+			padding: 20px;
+			background-color: #333;
+			color: #fff;
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Driving Test Information Auto Fill</h1>
+	<div class="container">
+		<div class="sidebar">
+			<h2></h2>
+			<ul>
+				<li><a href="gencode.html" target="right">Generate Javascript</a></li><br>
+				<!--<li><a href="countdown.html?frame=true" target="right">Countdown to 6 am</a></li><br>
+					<li><a href="countdown.html" target="_blank">Countdown to 6 am</a></li><br>
+				-->
+				<li><a href="countdown.html">Countdown to 6 am</a></li><br>
+				<li><a href="tutorial.html" target="right">Tutorial</a></li><br>
+			</ul>
+		</div>
+		<div class="main">
+            <iframe id="content" name="right" src="tutorial.html"></iframe>
+		</div>
+	</div>
+</body>
+</html>
